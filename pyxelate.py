@@ -53,9 +53,9 @@ def fix_img_dim(img, w, h):
 ###MAIN
 def main():
 
-    p = argparse.ArgumentParser(description="Make line of colored text look like an Image")
+    p = argparse.ArgumentParser(description="Make an image a low-res version of it")
     p.add_argument("image", help="Image File Path")
-    p.add_argument("-d","-dimension", type=int, default=15, help="Size of TYPEFACE")
+    p.add_argument("-d","-dimension", type=int, default=15, help="Size of PixelBlock")
     args = p.parse_args()
 
     print("\nWork in Progress... \n")
